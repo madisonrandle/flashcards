@@ -5,7 +5,7 @@ const Card = require('../src/Card');
 const Turn = require('../src/Turn');
 const data = require('../src/data');
 
-// Class default properties
+// Class default properties - ✔️
 // Class methods
 // Anything that updates class properties
 
@@ -26,9 +26,25 @@ describe('Turn', () => {
     expect(turn).to.be.an.instanceof(Turn);
   });
 
-  it('should be instantiated with a guess and card object', () => {
-    expect(turn.userGuess).to.equal('object', card);
-  })
+  it('should accept a user\'s guess', () => {
+    expect(turn.userGuess).to.be.a('string');
+    expect(turn.userGuess).to.equal('object');
+  });
+
+  it('should accept a card\'s content for each play', () => {
+    expect(turn.currentCard).to.be.an('object');
+    expect(turn.currentCard).to.equal(card);
+  });
+
+  it('should return a user\'s guess', () => {
+    expect(turn.returnGuess()).to.equal('object');
+  });
+
+  it('should return a card\'s content for each play', () => {
+    expect(turn.returnCard()).to.equal(card);
+  });
+
+
 });
 
 //
