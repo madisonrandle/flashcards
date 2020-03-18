@@ -11,6 +11,18 @@ class Turn {
   returnCard() {
     return this.currentCard;
   }
+
+  evaluateGuess() {
+    return this.userGuess === this.currentCard.correctAnswer;
+  }
+
+  giveFeedback() {
+    if (this.evaluateGuess()) {
+      return 'correct!';
+    } else {
+      return 'incorrect!';
+    }
+  }
 }
 
 module.exports = Turn;
