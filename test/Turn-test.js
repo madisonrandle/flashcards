@@ -5,10 +5,6 @@ const Card = require('../src/Card');
 const Turn = require('../src/Turn');
 const data = require('../src/data');
 
-// Class default properties - ✔️
-// Class methods
-// Anything that updates class properties
-
 describe('Turn', () => {
   let card;
   let turn;
