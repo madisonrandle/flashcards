@@ -6,8 +6,7 @@ const Turn = require('../src/Turn');
 const data = require('../src/data');
 
 describe('Turn', () => {
-  let card;
-  let turn;
+  let card, turn;
 
   beforeEach(() => {
     card = new Card(data.prototypeData[0]);
@@ -23,7 +22,7 @@ describe('Turn', () => {
   });
 
   it('should accept a user\'s guess', () => {
-    // expect(turn.userGuess).to.be.a('string');
+    expect(turn.userGuess).to.be.a('string');
     expect(turn.userGuess).to.equal('function');
   });
 

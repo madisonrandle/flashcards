@@ -13,6 +13,15 @@ class Round {
     return this.deck[0];
   }
 
+  takeTurn(userGuess) {
+    const turn = new Turn(userGuess, this.returnCurrentCard());
+    const currentGuess = turn.evaluateGuess();
+    this.turns++;
+    !currentGuess && this.incorrectGuesses.push(this.deck[0].id);
+    this.deck.shift();
+    return turn.giveFeedback();
+  }
+
 }
 
 module.exports = Round;
