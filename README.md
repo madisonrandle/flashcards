@@ -4,7 +4,7 @@ This is my first solo project from Mod2 at Turing School of Software and Design.
 
 ## In Action
 
-![start of game gif](https://media.giphy.com/media/PjIrUVQETusBaa02nm/giphy.gif)
+![start of game gif](https://media.giphy.com/media/Uqw0RLaEp8QOiW9PiO/giphy.gif)
 
 ## Setup
 1. Fork and clone down this repo.
