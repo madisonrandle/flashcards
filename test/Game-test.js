@@ -29,13 +29,11 @@ describe('Game', function() {
 
   it('Should instantiate a new instance of Deck when startGame is called', () => {
     game.startGame()
-
     expect(deck).to.be.an.instanceof(Deck);
   });
 
   it('Should instantiate a new instance of Round when startGame is called', () => {
     game.startGame()
-
     expect(round).to.be.an.instanceof(Round);
   });
 });
