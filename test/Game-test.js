@@ -7,7 +7,7 @@ const Card = require('../src/Card');
 
 const Game = require('../src/Game');
 
-describe('Game', function() {
+describe('Game', () => {
   let game, deck, round;
 
   beforeEach(() => {
@@ -19,7 +19,7 @@ describe('Game', function() {
     round = new Round(deck)
   });
 
-  it('should be a function', function() {
+  it('should be a function', () => {
     expect(Game).to.be.a('function');
   });
 
