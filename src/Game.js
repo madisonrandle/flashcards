@@ -19,7 +19,6 @@ class Game {
   startGame() {
     const deck = new Deck(prototypeQuestions);
     const round = new Round(deck);
-    this.currentRound = round;
     this.printMessage(deck);
     this.printQuestion(round);
   }
