@@ -75,4 +75,20 @@ describe('Round', () => {
   it('Should return a string with feedback after each guess', () => {
     expect(round.takeTurn('array')).to.be.a('string');
   });
+
+  it('Should return the percentage of correct guesses', () => {
+    round.takeTurn('object');
+    round.takeTurn('function');
+    round.takeTurn('array');
+    expect(round.calculatePercentCorrect()).to.equal(33);
+  });
+
+  it('should end the round and print a message to the console', () => {
+    round.takeTurn('object');
+    round.takeTurn('function');
+    round.takeTurn('array');
+    expect(round.calculatePercentCorrect()).to.equal(33);
+    expect(round.endRound()).to.equal('** Round over! ** You answered 33% of the questions correctly!')
+  });
+
 });
