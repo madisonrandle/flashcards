@@ -11,8 +11,8 @@ This is my first solo project from Mod2 at Turing School of Software and Design.
 ## Setup
 1. Fork and clone down this repo.
 2. Once you have cloned the repo, change into the directory.
-3. Run [npm install] in your terminal
-4. Run [node index.js] in your terminal to begin playing.
+3. Run ```npm install``` in your terminal
+4. Run ```node index.js``` in your terminal to begin playing.
 
 ## Instructions
 * Use arrow keys to select an answer.
